@@ -1,8 +1,11 @@
+import { Header } from "./Header"
+import { StudentList } from "./StudentList"
 
 export function Dashboard(){
     return(
         <>
-            <h1>Panel principal de la aplicacion</h1>
+            <Header />
+            <StudentList />
         </>
     )
 }

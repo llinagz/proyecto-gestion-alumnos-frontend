@@ -11,6 +11,7 @@ export function Login(){
       event.preventDefault()
       const response = await API.login(teacher.usuario, teacher.password)
       if(response.length != 0){
+        sessionStorage.setItem("usuario", response)
         navigate('/dashboard')
       }
       else{
